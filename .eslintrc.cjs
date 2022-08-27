@@ -26,7 +26,7 @@ module.exports = {
   settings: {
     react: {
       pragma: "h",
-      version: "detect",
+      version: "16.0",
     },
   },
   ignorePatterns: ["node_modules/", "dist/"],
