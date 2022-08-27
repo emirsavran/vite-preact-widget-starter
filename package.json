@@ -11,7 +11,8 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "preact": "^10.10.1"
+    "preact": "^10.10.1",
+    "zoid": "^9.0.86"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.3.0",
