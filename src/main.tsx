@@ -1,5 +1,11 @@
 import { render } from "preact";
+import Frame from "react-frame-component";
 import { App } from "./app";
 import "./index.css";
 
-render(<App />, document.getElementById("my-app") as HTMLElement);
+render(
+  <Frame id="myWidget" frameBorder={0}>
+    <App />
+  </Frame>,
+  document.body
+);

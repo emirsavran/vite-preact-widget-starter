@@ -8,7 +8,15 @@
     <title>Widget Test Page</title>
   </head>
   <body>
-    <div id="my-app"></div>
     <script type="module" src="/dist/my-lib.js"></script>
+    <script>
+      // window.app is initialized in my-lib.js and its' methods won't be available before the iframe is loaded
+      const intId = setInterval(() => {
+        if (window.app?.setName) {
+          clearInterval(intId);
+          window.app.setName("World!");
+        }
+      }, 100);
+    </script>
   </body>
 </html>

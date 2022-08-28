@@ -1,0 +1,16 @@
+diff --git a/node_modules/react-frame-component/index.d.ts b/node_modules/react-frame-component/index.d.ts
+index b0e4a11..ff7d7f7 100644
+--- a/node_modules/react-frame-component/index.d.ts
++++ b/node_modules/react-frame-component/index.d.ts
+@@ -12,9 +12,8 @@ declare module 'react-frame-component' {
+     ref?: React.Ref<HTMLIFrameElement>;
+   }
+ 
+-  export default class FrameComponent extends React.Component<
+-    FrameComponentProps
+-  > {}
++  const FrameComponent: React.Component<FrameComponentProps>;
++  export default FrameComponent;
+ 
+   export interface FrameContextProps {
+     document?: HTMLDocument;
