@@ -12,8 +12,10 @@
     "postinstall": "patch-package"
   },
   "dependencies": {
+    "ethers": "^5.7.0",
     "preact": "^10.10.1",
-    "react-frame-component": "^5.2.3"
+    "react-frame-component": "^5.2.3",
+    "wagmi": "^0.6.4"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.3.0",
@@ -23,7 +25,6 @@
     "eslint": "^8.23.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-react": "^7.31.1",
-    "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "patch-package": "^6.4.7",
     "prettier": "2.7.1",
