@@ -14,3 +14,60 @@ index b0e4a11..ff7d7f7 100644
  
    export interface FrameContextProps {
      document?: HTMLDocument;
+diff --git a/node_modules/react-frame-component/lib/Content.js b/node_modules/react-frame-component/lib/Content.js
+index e7352d4..cbb4faf 100644
+--- a/node_modules/react-frame-component/lib/Content.js
++++ b/node_modules/react-frame-component/lib/Content.js
+@@ -10,10 +10,6 @@ var _react = require('react');
+ 
+ var _react2 = _interopRequireDefault(_react);
+ 
+-var _propTypes = require('prop-types');
+-
+-var _propTypes2 = _interopRequireDefault(_propTypes);
+-
+ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+ 
+ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+@@ -52,9 +48,4 @@ var Content = function (_Component) {
+   return Content;
+ }(_react.Component);
+ 
+-Content.propTypes = {
+-  children: _propTypes2.default.element.isRequired,
+-  contentDidMount: _propTypes2.default.func.isRequired,
+-  contentDidUpdate: _propTypes2.default.func.isRequired
+-};
+ exports.default = Content;
+\ No newline at end of file
+diff --git a/node_modules/react-frame-component/lib/Frame.js b/node_modules/react-frame-component/lib/Frame.js
+index 54ca9b7..7a00165 100644
+--- a/node_modules/react-frame-component/lib/Frame.js
++++ b/node_modules/react-frame-component/lib/Frame.js
+@@ -17,10 +17,6 @@ var _reactDom = require('react-dom');
+ 
+ var _reactDom2 = _interopRequireDefault(_reactDom);
+ 
+-var _propTypes = require('prop-types');
+-
+-var _propTypes2 = _interopRequireDefault(_propTypes);
+-
+ var _Context = require('./Context');
+ 
+ var _Content = require('./Content');
+@@ -164,15 +160,6 @@ var Frame = exports.Frame = function (_Component) {
+   return Frame;
+ }(_react.Component);
+ 
+-Frame.propTypes = {
+-  style: _propTypes2.default.object, // eslint-disable-line
+-  head: _propTypes2.default.node,
+-  initialContent: _propTypes2.default.string,
+-  mountTarget: _propTypes2.default.string,
+-  contentDidMount: _propTypes2.default.func,
+-  contentDidUpdate: _propTypes2.default.func,
+-  children: _propTypes2.default.oneOfType([_propTypes2.default.element, _propTypes2.default.arrayOf(_propTypes2.default.element)])
+-};
+ Frame.defaultProps = {
+   style: {},
+   head: null,
