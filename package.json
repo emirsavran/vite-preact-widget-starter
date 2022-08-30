@@ -25,6 +25,7 @@
     "lint-staged": "^13.0.3",
     "patch-package": "^6.4.7",
     "prettier": "2.7.1",
+    "rollup-plugin-visualizer": "^5.8.0",
     "simple-pre-commit": "^1.2.1",
     "typescript": "^4.6.4",
     "vite": "^3.0.7"
